@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> MyWebsite </title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="nav-container">
+        <div class="logo">
+        <img src="2.png">
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#profiles">Our Profile</a>
+            <a href="#message">Message Us</a>
+        </nav>
+    </header>
+    <p class="garis"></p>
+        <section id="home">
+            <div class="sapa">Hai <span id="username"></span>!</div>
+            <p> Ini adalah website portofolio saya</p>
+            <br>
+            <div>
+                <img class="img" src="3.jpg">
+                <img class="img" src="4.jpg">
+                <img class="img" src="5.jpg">
+            </div>
+        </section>
+        <p class="garis"></p>
+        <section id="profiles">
+            <h1>Our Profiles</h1>
+            <div class="profiles">
+            <div class="pfp">
+            <div class="icon">
+                <img src="mario.png" width="200px" height="auto">
+            </div>
+            <div class="name">Mario</div>
+            </div>
+            <div class="pfp">
+            <div class="icon">
+                <img src="luigi.jpg" width="200px" height="auto">
+            </div>
+            <div class="name">Luigi</div>
+            </div>
+            <div class="pfp">
+            <div class="icon">
+                <img src="yoshi.png" width="200px" height="auto">
+            </div>
+            <div class="name">Yoshi</div>
+            </div>
+            </div>
+        </section>
+        <p class="garis"></p>
+        <section id="message">
+                <h1>Message Us</h1>
+            <article class="message-us">
+                <div class="form">
+                    <form id="form-message-us" target="_self">
+                        <table class="table-form">
+                    <tr>
+                        <th><label for="name">Name</td></label></th>
+                        <td class="sd"> : </td>
+                        <td><input type="text" id="name" name="name" required></td>
+                    </tr>
+                    <tr>
+                        <th><label for="ttl">Tanggal Lahir</label></th>
+                        <td class="sd"> : </td>
+                        <td><input type="date" id="ttl" name="ttl" required></td>
+                    </tr>
+                    <tr>
+                        <th><p>Jenis Kelamin</p></th>
+                        <td class="sd"> : </td>
+                        <td><label for="Laki">
+                        <input type="radio" id="Laki-laki" name="gender" value="Laki-laki">Laki-laki</label>
+                        <label for="Perempuan">
+                        <input type="radio" id="Perempuan" name="gender" value="Perempuan">Perempuan
+                    </td>
+                </label>
+                    </tr>
+                    <tr>
+                        <td><label for="pesan">Pesan<td class="sd"> : </td>:</label></td>
+                        <td><textarea id="pesan" name="pesan" rows="8" placeholder="Type here" maxlength="100"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><button onclick="validate()" id="submit"> Submit </button></td>
+                    </tr>
+                </table>
+            </form>
+                </div>
+            <div class="result">
+                <p id="date-now"></p>
+                <table class="table-result">
+                    <tr>
+                        <th><span id="Nama"></span></th>
+                        <td id="eq1"></td>
+                        <td><span id="sender-full-name"></span></td>
+                    </tr>
+
+                    <tr>
+                        <th><span id="Birth"></span></th>
+                        <td id="eq2"></td>
+                        <td><span id="sender-birth"></span></td>
+                    </tr>
+
+                    <tr>
+                        <th><span id="Gender"></span></th>
+                        <td id="eq3"></td>
+                        <td><span id="sender-gender"></span></td>
+                    </tr>
+
+                    <tr>
+                        <th><span id="Pesan"></span></th>
+                        <td id="eq4"></td>
+                        <td><span id="sender-messages"></span></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <p class="garis"></p>
+        <footer>
+            <p> Created by Marcella Calista Kristianti </p>
+        </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
